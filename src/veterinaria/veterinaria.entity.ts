@@ -1,10 +1,20 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('categories')
-export class Category {
+@Entity()
+export class Veterinaria {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
-  name: string;
+  origen: string;
+
+  @Column()
+  destino: string;
+
+  @Column()
+  fecha: Date;
+
+  
+  @Column()
+  precio: number;
 }
