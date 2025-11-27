@@ -14,7 +14,6 @@ export class Veterinaria {
   @Column()
   fecha: Date;
 
-  
   @Column()
   precio: number;
 }
